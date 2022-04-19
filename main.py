@@ -16,11 +16,11 @@ while row != "":
     ave = round(ave,1)
     rank = ""
     if ave >= 8.0:
-        rank = "gioi"
+        rank = "Giỏi"
     elif ave >= 6.5:
-        rank = "kha"
+        rank = "Khá"
     elif ave < 6.5 :
-        rank = "trung binh"
+        rank = "Trung Bình"
     row_new = row.strip() + "," + str(ave) + "," + rank + "\n"
     print(row_new)
     save.write(row_new)
